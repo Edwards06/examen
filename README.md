@@ -15,7 +15,7 @@ namespace BibliotecaApp
             InitializeComponent();
         }
 
-        // ➕ CREATE
+        // CREATE
         private void btnAdd_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -35,7 +35,7 @@ namespace BibliotecaApp
             LoadData();
         }
 
-        // 👀 READ
+        // READ
         private void btnShow_Click(object sender, EventArgs e)
         {
             LoadData();
@@ -54,7 +54,7 @@ namespace BibliotecaApp
             conn.Close();
         }
 
-        // ✏️ UPDATE
+        // UPDATE
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -74,7 +74,7 @@ namespace BibliotecaApp
             LoadData();
         }
 
-        // ❌ DELETE
+        // DELETE
         private void btnDelete_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -91,7 +91,7 @@ namespace BibliotecaApp
             LoadData();
         }
 
-        // 📌 click pe tabel -> fill textbox
+        // click pe tabel -> fill textbox
         private void dgvCarte_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtID.Text = dgvCarte.CurrentRow.Cells[0].Value.ToString();
